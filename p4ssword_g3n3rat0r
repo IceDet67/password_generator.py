@@ -1,0 +1,71 @@
+#password generator
+
+#we create the main function and input validation cycle
+
+while True:
+
+
+    print('''
+ ____                                     _ 
+|  _ \ __ _ ___ _____      _____  _ __ __| |
+| |_) / _` / __/ __\ \ /\ / / _ \| '__/ _` |
+|  __/ (_| \__ \__ \ V  V / (_) | | | (_| |
+|_|   \__,_|___/___/ \_/\_/ \___/|_|  \__,_|
+                                            
+                                 _             
+  __ _  ___ _ __   ___ _ __ __ _| |_ ___  _ __ 
+ / _` |/ _ \ '_ \ / _ \ '__/ _` | __/ _ \| '__|
+| (_| |  __/ | | |  __/ | | (_| | || (_) | |   
+ \__, |\___|_| |_|\___|_|  \__,_|\__\___/|_|   
+ |___/                                          
+ 
+ [*]My GitHub ------>https://github.com/IceDet67?tab=repositories
+ [*]create by IceDet67
+ ''')
+    break
+
+def password_generator():   #function 1 #loop request to accept or reject the program procedure
+    convalida="y"
+    while convalida == "y" or convalida == "Y":
+      generator ()
+      convalida = input('''
+
+      [*]to continue press y or n to exit
+
+ ''')
+      continue
+
+    print("Thanks for using the program!")
+
+
+
+def generator ():   #function of the random module to generate the characters       #function 2
+
+    import random
+
+    print ('''Hello here you are in the tool that generates passwords randomly!
+    ''')
+
+    characters =( 
+    '''abcdefghiklmnopqrstuvwxyz1234567890ABCDEFGHIKLMNOPQRSTUVWXYZ\|!"£$%&/()=?è+éè[]òàùç°§@#;:_''')
+
+    length = int(input('''choose the password length!
+        '''))
+    
+
+    password = ""
+    
+
+    for x in range (length):    #recycling of the for requesting the password length
+        password += random.choice (characters)
+
+    print ("HERE IS YOUR NEW PASSWORD!!!: ", password)
+
+     
+    
+
+        
+password_generator()  #activation of function number 1
+        
+
+
